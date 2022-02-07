@@ -1,0 +1,22 @@
+1. Install serverless framework
+
+npm install -g serverless
+
+2. Install project dependencies defined in package.json
+
+npm install
+
+3. Deploy using serverless.yml
+
+You should get response like this
+
+✔ Service deployed to stack udroppyserverless-dev (128s)
+
+endpoints:
+  POST - https://x9qb4ikv03.execute-api.us-east-1.amazonaws.com/dev/createShortUrl
+  GET - https://x9qb4ikv03.execute-api.us-east-1.amazonaws.com/dev/getLongUrl/{shorturl}
+  GET - https://x9qb4ikv03.execute-api.us-east-1.amazonaws.com/dev/getStats/{shorturl}
+functions:
+  createShortUrl: udroppyserverless-dev-createShortUrl (1.1 MB)
+  getLongUrl: udroppyserverless-dev-getLongUrl (1.1 MB)
+  getStats: udroppyserverless-dev-getStats (1.1 MB)
