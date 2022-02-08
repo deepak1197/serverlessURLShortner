@@ -32,7 +32,7 @@ exports.handler = async (event, context) => {
                 let statInfo = {
                     IP: event['headers']['X-Forwarded-For'],
                     shorturl,
-                    time: new Date()
+                    time: Date.now()
                 }
 
                 await Dynamo.updateStats(statInfo, LogsTableName);
